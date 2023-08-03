@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@components": [
+        "./src/components/"
+      ],
+      "@assets": [
+        "./src/assets/"
+      ],
+      "@adapters": [
+        "./src/adapters/"
+      ],
+      "@pages": [
+        "./src/pages/"
+      ],
+      "@hooks": [
+        "./src/hooks/"
+      ],
+      "@layouts": [
+        "./src/layouts/"
+      ],
+      "@models": [
+        "./src/models/"
+      ],
+      "@helpers": [
+        "./src/helpers/"
+      ],
+      "@constans": [
+        "./src/constans/"
+      ],
+      "@router": [
+        "./src/router/"
+      ],
+      "@store": [
+        "./src/store/"
+      ],
+    },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
